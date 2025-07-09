@@ -32,7 +32,11 @@ And then follow these steps:
         -DLLVM_INSTALL_UTILS=ON \
         -DLLVM_OPTIMIZED_TABLEGEN=ON \
         -DLLVM_TARGETS_TO_BUILD="host"
+<<<<<<< HEAD
     ninja -j$(nproc)
+=======
+    ninja
+>>>>>>> refs/remotes/github/bump-rust
     popd
 
 #### Build CIRCT
@@ -44,7 +48,11 @@ And then follow these steps:
         -DMLIR_DIR=$PWD/../llvm/build/lib/cmake/mlir \
         -DLLVM_DIR=$PWD/../llvm/build/lib/cmake/llvm \
         -DLLVM_ENABLE_ASSERTIONS=ON
+<<<<<<< HEAD
     ninja -j$(nproc)
+=======
+    ninja
+>>>>>>> refs/remotes/github/bump-rust
     popd
 
 #### Build Moore
